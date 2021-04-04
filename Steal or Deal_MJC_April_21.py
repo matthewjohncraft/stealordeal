@@ -11,7 +11,6 @@ gamesLost = 0                                                                   
 gamesDrawn = 0                                                                                                          # variable to count the amount of games drawn by the human/player
 stealCount = 0                                                                                                          # variable to count the amount of games where the human selects steal
 
-
 print("Welcome to Steal or Deal!")                                                                                      # initialise game welcoming the user and asking them to select a strategy for the computer.
 print("-------------------------")
 print("")
@@ -19,7 +18,6 @@ print("1. Always steal")
 print("2. Always deal")
 print("3. Random")
 print("")
-
 
 compStrategy = int(input("Which Strategy for the computer [1,2,3]? "))                                                  # prompt for user to select the strategy of the computer. Strategy can be always steal, always deal or random
 
@@ -37,11 +35,9 @@ print("Jackpot: 100")
 gameAnswer = (input("Steal, Deal or Quit [s|d|q]? "))
 print("")
 
-
 if gameAnswer == "q":                                                                                                   # if user selects quit they receive acknowledgement
     print("")
     print("No worries... another time perhaps : )")
-
 
 elif gameAnswer == 's':                                                                                                 # displaying humans selection
     print("You chose: Steal")
@@ -54,7 +50,6 @@ elif computerChoice == 1:                                                       
     print("Comp chose: Steal")
 elif computerChoice == 2:
     print("Comp chose: Deal")
-
 
 if computerChoice == 2 and gameAnswer == "d":                                                                           # comparing answers in case of a draw and defining the result to assign scores
     print("Draw! Split pot - 50 each")
@@ -165,8 +160,6 @@ while gameCount < 9 and gameAnswer != "q":                                      
         print("")
         print("Game Limit reached")
         print("")
-
-
 
     else:                                                                                                               # once the limit of games played has been reached the game summary is printed with the results.
         print("Game Summary")
