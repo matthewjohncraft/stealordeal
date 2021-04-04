@@ -7,7 +7,7 @@ computerScore = 0                                                               
 humanScore = 0                                                                                                          # variable to count the humans/players score
 gameCount = 0                                                                                                           # variable to count the amount of games played
 gamesWon = 0                                                                                                            # variable to count the amount of games won by the human/player
-gamesLost = 0                                                                                                           # variable to count the amount of games won by the human/player
+gamesLost = 0                                                                                                           # variable to count the amount of games lost by the human/player
 gamesDrawn = 0                                                                                                          # variable to count the amount of games drawn by the human/player
 stealCount = 0                                                                                                          # variable to count the amount of games where the human selects steal
 
@@ -41,7 +41,6 @@ print("")
 if gameAnswer == "q":                                                                                                   # if user selects quit they receive acknowledgement
     print("")
     print("No worries... another time perhaps : )")
-
 
 
 elif gameAnswer == 's':                                                                                                 # displaying humans selection
